@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main">#993399</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="black_text">#202020</color>
+    <color name="gray_text">#808080</color>
+    <color name="gray_line">#CCC9C2</color>
+    <color name="yellow_button">#F6AB00</color>
+    <color name="light_gray">#F6F2EF</color>
+    <color name="gray_bk">#BAB6AD</color>
+    
+    <color name="white">#FFF</color>
+    
+    <!-- 正在进行的友约的状态标签的背景色 -->
+    <color name="ing_appoint_bg">#98D6A6</color>
+    
+    <color name="popup_bg">#88000000</color>
+    
+    <color name="sep_line">#F3F5F7</color>
+</resources>

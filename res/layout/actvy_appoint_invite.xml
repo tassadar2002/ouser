@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_head_bar"
+        layout="@layout/layout_head_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/txt_content"
+            style="@style/BlackBigText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+        <include layout="@layout/layout_separation" />
+
+        <TextView
+            android:id="@+id/txt_remain_count"
+            style="@style/GrayMiddleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+        <include layout="@layout/layout_separation" />
+        
+        <LinearLayout 
+            android:id="@+id/btn_phone_contact"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/white_panel"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal">
+
+        <TextView
+            style="@style/BlackBigText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的通讯录" />
+        <TextView 
+            style="@style/GrayMiddleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(不受发送条数限制)"/>
+            
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_befollow"
+            style="@style/BlackBigText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/white_panel"
+            android:gravity="left|center_vertical"
+            android:text="我的藕丝儿" />
+
+        <TextView
+            android:id="@+id/btn_follow"
+            style="@style/BlackBigText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/white_panel"
+            android:gravity="left|center_vertical"
+            android:text="我关注的人" />
+        
+        <TextView
+            android:id="@+id/btn_share_weixin"
+            style="@style/BlackBigText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/white_panel"
+            android:gravity="left|center_vertical"
+            android:text="分享到微信" />
+    </LinearLayout>
+
+</LinearLayout>

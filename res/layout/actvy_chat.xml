@@ -1,0 +1,54 @@
+<!-- focus 为edittext 不自动获得焦点 -->
+<com.ouser.ui.component.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true" 
+	android:focusableInTouchMode="true" 
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_head_bar"
+        layout="@layout/layout_head_bar" />
+
+    <FrameLayout
+        android:id="@+id/layout_info"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content" />
+    
+    <include layout="@layout/layout_separation"/>
+ 	
+ 	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1" >
+ 	    
+ 	    <include layout="@layout/layout_chat_list" />
+ 	    <include
+ 	        android:id="@+id/layout_voice_hint" 
+ 	        layout="@layout/layout_chat_voice_hint"
+ 	        android:visibility="gone" />
+ 	    <include 
+ 	        layout="@layout/layout_chat_menu"
+    		android:visibility="gone" />
+ 	    <FrameLayout 
+ 	        android:id="@+id/layout_radar"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="match_parent"
+ 	        android:layout_alignParentTop="true"
+ 	        android:layout_marginBottom="100dp"/>
+ 	</RelativeLayout>
+ 	
+ 	<include layout="@layout/layout_separation"/>
+
+    <include layout="@layout/layout_chat_input" />
+
+    <FrameLayout
+        android:id="@+id/layout_emotion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone"/>
+
+    <include layout="@layout/layout_chat_edit" />
+    
+</com.ouser.ui.component.ResizeLayout>

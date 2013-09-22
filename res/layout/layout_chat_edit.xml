@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_chat_edit" 
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/btn_delete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="删除"
+        style="@style/BlackBigText" />
+
+    <TextView
+        android:id="@+id/btn_clear"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/gray_line"
+        android:text="全部清除"
+        android:textColor="@color/white"
+        style="@style/BlackBigText" />
+
+</LinearLayout>

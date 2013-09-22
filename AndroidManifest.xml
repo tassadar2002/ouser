@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ouser"
+    android:versionCode="2"
+    android:versionName="2.0.1" >
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!-- map use -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="com.ouser.OuserApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- for autonavi -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="79fd2e31e70c8921197deea4d68c1e58" />
+
+        <!-- for umeng -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="	514beba656240b505600035e" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ouser" />
+
+        <activity
+            android:name="com.ouser.ui.user.WelcomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ouser.ui.topframework.TopActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.other.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.user.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.user.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.user.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.user.ModifyPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.profile.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.profile.ProfileListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.appoint.AppointDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.ouser.SearchOuserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.profile.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.profile.EditAboutmeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.appoint.PublishAppointActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.map.LocationViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.map.LocationSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.map.LocationSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.ouser.PhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.chat.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.chat.ImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.ouser.BlackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.appoint.AppointInviteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.appoint.AppointInviteListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.ouser.ui.other.ShakeActivity"
+            android:screenOrientation="portrait" />
+        <!-- umeng -->
+        <activity
+            android:name="com.umeng.fb.ui.SendFeedback"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.umeng.fb.ui.FeedbackConversations"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.umeng.fb.ui.FeedbackConversation"
+            android:configChanges="keyboard"
+            android:screenOrientation="portrait" />
+        <!-- weixin -->
+        <activity
+            android:name="com.ouser.wxapi.WXEntryActivity"
+            android:exported="true" >
+        </activity>
+        
+        <service android:name="com.ouser.pusher.PushService" />
+    </application>
+
+</manifest>

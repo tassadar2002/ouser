@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_attachment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:layout_alignParentBottom="true"
+	android:layout_marginBottom="5dp"
+	android:paddingTop="5dp"
+	android:paddingBottom="5dp"
+    android:background="@color/gray_bk"
+    android:alpha="0.5"
+    android:orientation="horizontal" >
+
+	<ImageView
+        android:id="@+id/btn_emotion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/chat_menu_emotion"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/btn_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/chat_menu_location"
+        android:scaleType="center" />
+
+    <ImageView
+        android:id="@+id/btn_album"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/chat_menu_album"
+        android:scaleType="center" />
+    
+    <ImageView
+        android:id="@+id/btn_camera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/chat_menu_camera"
+        android:scaleType="center" />
+
+</LinearLayout>

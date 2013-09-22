@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_head_bar"
+        layout="@layout/layout_head_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="帐号设置" />
+
+            <include layout="@layout/layout_separation" />
+
+            <LinearLayout
+                android:id="@+id/layout_password"
+                style="@style/SettingItem" >
+
+                <TextView
+                    style="@style/SettingText"
+                    android:text="密码管理" />
+
+                <ImageView
+                    style="@style/SettingIcon"
+                    android:src="@drawable/arrow_icon" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_separation" />
+
+            <LinearLayout
+                android:id="@+id/layout_autologin"
+                style="@style/SettingItem" >
+
+                <TextView
+                    style="@style/SettingText"
+                    android:text="自动登录" />
+
+                <CheckBox
+                    android:id="@+id/chk_autologin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_separation" />
+            
+            <LinearLayout
+                android:id="@+id/layout_shareto_weixin"
+                style="@style/SettingItem" >
+
+                <TextView
+                    style="@style/SettingText"
+                    android:text="自动提示分享到微信" />
+
+                <CheckBox
+                    android:id="@+id/chk_shareto_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+            
+            <include layout="@layout/layout_separation" />
+
+            <LinearLayout
+                android:id="@+id/layout_black"
+                style="@style/SettingItem" >
+
+                <TextView
+                    style="@style/SettingText"
+                    android:text="黑名单" />
+
+                <ImageView
+                    style="@style/SettingIcon"
+                    android:src="@drawable/arrow_icon" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_separation" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="系统设置" />
+
+            <include layout="@layout/layout_separation" />
+
+            <LinearLayout
+                android:id="@+id/layout_feedback"
+                style="@style/SettingItem" >
+
+                <TextView
+                    style="@style/SettingText"
+                    android:text="问题反馈" />
+
+                <ImageView
+                    style="@style/SettingIcon"
+                    android:src="@drawable/arrow_icon" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_separation" />
+
+            <LinearLayout
+                android:id="@+id/layout_upgrade"
+                style="@style/SettingItem" >
+
+                <TextView
+                    style="@style/SettingText"
+                    android:text="检查更新" />
+
+                <ImageView
+                    style="@style/SettingIcon"
+                    android:src="@drawable/arrow_icon" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_separation" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btn_logout"
+        style="@style/YellowButton"
+        android:text="注销" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <!-- 如果不加父节点，会导致imageview的width和height不起作用 -->
+	<ImageView
+	    android:id="@+id/image_photo"
+	    android:layout_width="70dp"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center_vertical"
+	    android:scaleType="fitXY" />
+</FrameLayout>
+
+

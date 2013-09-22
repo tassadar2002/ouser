@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/BlackBigText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical" />
+	
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+	    android:background="@color/gray_line" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:listSelector="@null" />
+
+    <include layout="@layout/layout_separation" />
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        style="@style/BlackBigText"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:background="@color/gray_bk"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="取消" />
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:listSelector="@null"
+        android:divider="@null" />
+
+    <include layout="@layout/layout_separation" />
+
+    <TextView
+        android:id="@+id/btn_cancel"
+        style="@style/BlackBigText"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:background="@color/gray_bk"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="取消" />
+
+</LinearLayout>

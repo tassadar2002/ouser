@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        style="@style/BlackBigText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:text="筛选友约对象" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/rbtn_whole"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="12dp" >
+
+            <ImageView
+                android:id="@+id/image_whole"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/gender_filter_whole" />
+
+            <TextView
+                android:id="@+id/txt_whole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="全部"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rbtn_male"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="12dp" >
+
+            <ImageView
+                android:id="@+id/image_male"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/gender_filter_male" />
+
+            <TextView
+                android:id="@+id/txt_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="男"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rbtn_female"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="12dp" >
+
+            <ImageView
+                android:id="@+id/image_female"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/gender_filter_female" />
+
+            <TextView
+                android:id="@+id/txt_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="女"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:id="@+id/layout_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" />
+
+    <com.sc.android.view.RangeSeekBar
+        xmlns:sc="http://schemas.android.com/apk/res/com.ouser"
+        android:id="@+id/rangeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        sc:limitThumbRange="true"
+        sc:orientation="horizontal"
+        sc:range="@drawable/slider_range"
+        sc:scaleMax="60"
+        sc:scaleMin="0"
+        sc:scaleStep="5.0"
+        sc:thumb="@drawable/slider_thumb"
+        sc:thumbHeight="20dp"
+        sc:thumbWidth="20dp"
+        sc:thumbs="2"
+        sc:track="@drawable/slider_track" />
+
+    <TextView
+        style="@style/GrayMiddleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="20dp"
+        android:text="拖动或直接点击选择年龄范围" />
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<!-- TODO，层次优化空间 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView 
+        android:id="@+id/image_portrait"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/default_photo"/>
+    
+    <FrameLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="30dp">
+        
+	    <FrameLayout
+	        android:id="@+id/layout_content_container"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left"
+	        android:background="@drawable/chat_bubble_recv_bg" />
+    </FrameLayout>
+    
+    <ImageView
+        android:id="@+id/chk_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/checkbox_uncheck"
+        android:visibility="gone" />
+    
+</LinearLayout>

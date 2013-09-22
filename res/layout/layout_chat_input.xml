@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_chat_input"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:padding="5dp"
+    android:background="#F5F3EF"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/btn_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/chat_input_voice" />
+
+    <ImageView
+        android:id="@+id/btn_attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/chat_input_attachment" />"
+    
+    <FrameLayout 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="5dp">
+
+	    <com.ouser.ui.widget.EmotionEditText
+	        android:id="@+id/edit_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:imeOptions="actionSend"
+	        style="@style/EditText" />
+	    
+	    <TextView 
+	        android:id="@+id/txt_record"
+			android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:text="按住录音"
+	        android:background="@drawable/white_panel"
+	        android:visibility="gone"
+	        style="@style/BlackMiddleText"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/chat_input_send" />
+
+</LinearLayout>

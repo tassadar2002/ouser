@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+	<cost title="花费">
+	    <item key="0"><![CDATA[我请客]]></item>
+	    <item key="1"><![CDATA[AA制]]></item>
+	    <item key="2" default="1"><![CDATA[不限]]></item>
+	</cost>
+	<validday title="有效期">
+	    <item key="0" default="1"><![CDATA[长期]]></item>
+	    <item key="1"><![CDATA[一天]]></item>
+	    <item key="2"><![CDATA[三天]]></item>
+	    <item key="3"><![CDATA[七天]]></item>
+	    <item key="4"><![CDATA[一个月]]></item>
+	    <item key="5"><![CDATA[三个月]]></item>
+	</validday>
+    <height title="身高">
+        <item key="-1" default="1"><![CDATA[]]></item>
+        <item key="0"><![CDATA[<140cm]]></item>
+        <item key="1"><![CDATA[142cm]]></item>
+        <item key="2"><![CDATA[144cm]]></item>
+        <item key="3"><![CDATA[146cm]]></item>
+        <item key="4"><![CDATA[148cm]]></item>
+        <item key="5"><![CDATA[150cm]]></item>
+        <item key="6"><![CDATA[152cm]]></item>
+        <item key="7"><![CDATA[154cm]]></item>
+        <item key="8"><![CDATA[156cm]]></item>
+        <item key="9"><![CDATA[158cm]]></item>
+        <item key="10"><![CDATA[160cm]]></item>
+        <item key="11"><![CDATA[162cm]]></item>
+        <item key="12"><![CDATA[164cm]]></item>
+        <item key="13"><![CDATA[166cm]]></item>
+        <item key="14"><![CDATA[168cm]]></item>
+        <item key="15"><![CDATA[170cm]]></item>
+        <item key="16"><![CDATA[172cm]]></item>
+        <item key="17"><![CDATA[174cm]]></item>
+        <item key="18"><![CDATA[176cm]]></item>
+        <item key="19"><![CDATA[179cm]]></item>
+        <item key="20"><![CDATA[180cm]]></item>
+        <item key="21"><![CDATA[>180cm]]></item>
+    </height>
+    <body title="体型">
+        <item key="-1" default="1"><![CDATA[]]></item>
+        <item key="0"><![CDATA[苗条]]></item>
+        <item key="1"><![CDATA[中等]]></item>
+        <item key="2"><![CDATA[丰满]]></item>
+        <item key="3"><![CDATA[肌肉型]]></item>
+        <item key="4"><![CDATA[运动型]]></item>
+        <item key="5"><![CDATA[稍胖]]></item>
+    </body>
+    <merry title="情感">
+        <item key="-1" default="1"><![CDATA[]]></item>
+        <item key="0"><![CDATA[单身中]]></item>
+        <item key="1"><![CDATA[恋爱中]]></item>
+        <item key="2"><![CDATA[已婚]]></item>
+        <item key="3"><![CDATA[开放型]]></item>
+    </merry>
+    <education title="教育">
+        <item key="-1" default="1"><![CDATA[]]></item>
+        <item key="0"><![CDATA[中小学]]></item>
+        <item key="1"><![CDATA[大专]]></item>
+        <item key="2"><![CDATA[本科]]></item>
+        <item key="3"><![CDATA[研究生]]></item>
+        <item key="4"><![CDATA[博士生]]></item>
+        <item key="5"><![CDATA[更高学历]]></item>
+    </education>
+</xml>

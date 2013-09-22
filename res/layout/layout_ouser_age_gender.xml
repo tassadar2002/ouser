@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="14dp"
+    android:layout_marginTop="3dp"
+    android:background="@drawable/age_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp" >
+
+    <TextView
+        android:id="@+id/txt_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="#000"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/image_gender"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="7dp" />
+
+</LinearLayout>
